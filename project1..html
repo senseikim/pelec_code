@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Code</title>
+</head>
+
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Font', sans-serif;
+        list-style: none;
+        cursor: context-menu;
+    }
+    
+    h2 {
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+
+    p {
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 0 0 20px;
+        text-align: justify;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Header Section */
+    .header .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header .container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    /*  Header Section */
+
+    /* Navbar Section */
+    .navbar .container {
+        background-color: #197430;
+        display: flex;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar .container .nav {
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .navbar .container .nav:hover,
+    .navbar .container .nav a:hover {
+        color: #FFFFFF;
+        border-bottom: #FFFFFF solid 1px;
+    }
+    /*  Navbar Section */
+
+    /* Hero Section */
+    .hero .container {
+        display: flex;
+    }
+
+    .hero .container .box:first-child {
+        background-color: #72c34a;
+        padding: 30px 50px;
+        width: 30%;
+        height: auto;
+    }
+
+    .hero .container .box:first-child img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+
+    .hero .container .box:last-child {
+        background-color: #F5DCE075;
+        padding: 30px 50px;
+        width: 70%;
+        height: auto;
+    }
+
+    .hero .container .box:last-child img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+    /*  Hero Section */
+
+    /* CSS sa mga Screen */
+    @media  screen and (max-width: 768px) {
+        .hero .container .box:first-child {
+            width: 50%;
+            height: auto;
+        }
+
+        .hero .container .box:first-child img {
+            width: 100%; 
+            height: auto;
+        }
+
+        .hero .container .box:last-child {
+            width: 50%;
+            height: auto;
+        }
+
+        .hero .container .box:last-child img {
+            width: 100%; 
+            height: auto;
+        }
+    }
+
+    @media  screen and (max-width: 425px) {
+        .navbar .container .nav {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .hero .container {
+            display: block;
+        }
+
+        .hero .container .box:first-child {
+            width: auto;
+            height: auto;
+            padding: 30px 20px;
+        }
+
+        .hero .container .box:first-child img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .hero .container .box:last-child {
+            width: auto;
+            height: auto;
+            padding: 30px 20px;
+        }
+
+        .hero .container .box:last-child img {
+            width: 100%; 
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+    /*  Screen */
+</style>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <img src="hider.jpg" alt="CHLOROPHYLL">
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="container">
+            <li class="nav">
+                <a href="#">Home</a>
+                
+                
+            </li>
+            <li class="nav">
+                <a href="#">About</a>
+            </li>
+            <li class="nav">
+                <a href="#">Products</a>
+            </li>
+            <li class="nav">
+                <a href="#">Sign Up</a>
+            </li>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="box">
+                <h2>About</h2>
+                <p>Ayaw kitang pilitin kung di ka pa handa, ayaw ko nang binibitin kaya mabuti pang akoy uuwi na lang.</p>
+                <p>Creator</p>
+                <img src="IMG_20250131_175508_065.jpg" alt="Kim David the Creator">
+            </div>
+            <div class="box">
+                <h2>View Deck</h2>
+                <P> A place to experience peace, silence, green, and peace of mind. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni culpa, consequatur corporis maxime doloremque eligendi alias maiores fugit voluptatem unde nostrum praesentium distinctio esse sint cumque asperiores repellendus error laborum.</P>
+                <img src="IMG_20250203_185948.jpg" alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni culpa, consequatur corporis maxime doloremque eligendi">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
